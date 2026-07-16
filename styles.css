@@ -738,10 +738,12 @@ h3 {
 
 .project-dialog__media img,
 .project-dialog__media video,
+.project-dialog__media iframe,
 video.project-dialog__media {
   display: block;
   width: 100%;
   height: 100%;
+  border: 0;
   object-fit: contain;
   background: #fff;
 }
