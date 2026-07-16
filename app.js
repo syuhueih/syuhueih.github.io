@@ -164,7 +164,8 @@ const projects = [
     media: {
       type: "image",
       src: "./assets/images/mle-uvad-method.png?v=20260716-crop",
-      label: "MLE-UVAD method overview"
+      label: "MLE-UVAD method overview",
+      aspectRatio: "1796 / 870"
     },
     summary: "Developed MLE-UVAD, a fully unsupervised video anomaly detection framework using a convolutional autoencoder with Minimal Latent Entropy loss. Submitted to WACV 2027 and currently under review.",
     bullets: [
@@ -312,7 +313,7 @@ function renderProjectDialogMedia(project) {
   }
 
   return `
-    <div class="project-dialog__media">
+    <div class="project-dialog__media"${project.media.aspectRatio ? ` style="aspect-ratio: ${project.media.aspectRatio};"` : ""}>
       <img src="${project.media.poster || project.media.src}" alt="${project.title} preview">
       ${project.media.type === "video" ? `<span class="project-media__play" aria-hidden="true">▶</span>` : ""}
     </div>
