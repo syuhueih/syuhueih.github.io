@@ -855,6 +855,7 @@ video.project-dialog__media {
 @media (max-width: 860px) {
   .site-header {
     grid-template-columns: 1fr max-content;
+    row-gap: 0.35rem;
   }
 
   .site-nav {
@@ -902,15 +903,28 @@ video.project-dialog__media {
   }
 
   .site-header {
+    min-height: 0;
+    row-gap: 0.5rem;
+    padding-block: 0.65rem 0.7rem;
     padding-inline: 0.75rem;
   }
 
   .site-nav {
-    gap: 0.72rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.25rem;
+    width: 100%;
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   .site-nav a {
-    font-size: 0.84rem;
+    min-width: 0;
+    color: color-mix(in srgb, var(--muted) 88%, var(--text));
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.2;
+    text-align: center;
     white-space: nowrap;
   }
 
