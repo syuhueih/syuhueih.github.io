@@ -78,7 +78,6 @@ a {
 .site-nav,
 .header-actions,
 .profile-links,
-.hero-actions,
 .carousel-actions,
 .publication-actions {
   display: flex;
@@ -226,8 +225,6 @@ main {
 }
 
 .pill-link,
-.primary-link,
-.secondary-link,
 .publication-button {
   display: inline-flex;
   align-items: center;
@@ -245,7 +242,6 @@ main {
 }
 
 .pill-link:hover,
-.secondary-link:hover,
 .publication-button:hover {
   border-color: var(--accent);
 }
@@ -319,22 +315,6 @@ h3 {
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0.02em;
-}
-
-.hero-actions {
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.45rem;
-}
-
-.primary-link {
-  border-color: var(--accent-strong);
-  background: var(--accent-strong);
-  color: #fff;
-}
-
-.primary-link:hover {
-  background: var(--accent);
 }
 
 .section {
