@@ -163,7 +163,7 @@ const projects = [
     category: "Video Anomaly Detection / WACV 2027 Submission",
     media: {
       type: "image",
-      src: "./assets/images/mle-uvad-method.png",
+      src: "./assets/images/mle-uvad-method.png?v=20260716-crop",
       label: "MLE-UVAD method overview"
     },
     summary: "Developed MLE-UVAD, a fully unsupervised video anomaly detection framework using a convolutional autoencoder with Minimal Latent Entropy loss. Submitted to WACV 2027 and currently under review.",
