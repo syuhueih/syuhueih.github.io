@@ -861,8 +861,14 @@ video.project-dialog__media {
     grid-column: 1 / -1;
     order: 3;
     justify-content: flex-start;
+    gap: 1rem;
     overflow-x: auto;
     padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .hero,
@@ -873,6 +879,11 @@ video.project-dialog__media {
 
   .profile-panel {
     width: min(100%, 320px);
+    justify-self: center;
+  }
+
+  .profile-photo {
+    margin-inline: auto;
   }
 
   .experience-track {
@@ -892,6 +903,15 @@ video.project-dialog__media {
 
   .site-header {
     padding-inline: 0.75rem;
+  }
+
+  .site-nav {
+    gap: 0.72rem;
+  }
+
+  .site-nav a {
+    font-size: 0.84rem;
+    white-space: nowrap;
   }
 
   .brand span:last-child {
