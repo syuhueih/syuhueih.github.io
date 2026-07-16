@@ -1,5 +1,5 @@
 const state = {
-  language: localStorage.getItem("language") || "en",
+  language: "en",
   theme: localStorage.getItem("theme") || "light"
 };
 
@@ -235,8 +235,7 @@ function translate() {
     const value = path.reduce((obj, key) => obj?.[key], langCopy);
     if (value) node.textContent = value;
   });
-  $("#languageToggle").textContent = state.language === "en" ? "中" : "EN";
-  document.documentElement.lang = state.language === "en" ? "en" : "zh-Hant";
+  document.documentElement.lang = "en";
   renderProjects();
   renderPublications();
 }
@@ -416,12 +415,6 @@ function bindEvents() {
   $("#themeToggle").addEventListener("click", () => {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
-  });
-
-  $("#languageToggle").addEventListener("click", () => {
-    state.language = state.language === "en" ? "zh" : "en";
-    localStorage.setItem("language", state.language);
-    translate();
   });
 
   $("[data-carousel-prev]").addEventListener("click", () => {
