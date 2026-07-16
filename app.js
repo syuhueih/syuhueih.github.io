@@ -158,6 +158,19 @@ const news = [
 
 const projects = [
   {
+    title: "AutoEncoder-based Anomaly Detection",
+    period: "May 2026",
+    category: "Video Anomaly Detection / WACV 2027 Submission",
+    summary: "Developed MLE-UVAD, a fully unsupervised video anomaly detection framework using a convolutional autoencoder with Minimal Latent Entropy loss. Submitted to WACV 2027 and currently under review.",
+    bullets: [
+      "Designed a convolutional autoencoder pipeline that trains directly on unlabeled single-scene videos containing both normal and anomalous frames.",
+      "Proposed a differentiable Minimal Latent Entropy (MLE) loss to improve latent representation learning and increase anomaly separability.",
+      "Used reconstruction quality with Pearson Correlation Coefficient scoring to detect anomalous frames without frame-level, video-level, or normal-only labels.",
+      "Achieved up to 0.970 AUC on public benchmarks, outperforming existing fully unsupervised baselines."
+    ],
+    tags: ["PyTorch", "Autoencoder", "MLE Loss", "Fully Unsupervised VAD", "PCC", "AUC"]
+  },
+  {
     title: "VLM-Guided Autonomous Mobile Manipulation System",
     period: "2026",
     category: "Robotics / Vision-Language Systems",
