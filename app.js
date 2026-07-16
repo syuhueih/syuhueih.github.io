@@ -162,8 +162,8 @@ const projects = [
     period: "2026",
     category: "Robotics / Vision-Language Systems",
     media: {
-      type: "video",
-      src: "./assets/videos/vlm-robocar.mp4",
+      type: "youtube",
+      src: "https://www.youtube.com/embed/6a7uvTOKMfY",
       label: "Demo video"
     },
     summary: "Built a vision-language robotic system that connects semantic perception, autonomous navigation, and manipulation in a ROS 2-based mobile platform.",
@@ -174,7 +174,7 @@ const projects = [
     ],
     tags: ["ROS 2", "OWL-V2", "LiDAR SLAM", "A*", "IK"],
     links: [
-      { label: "Demo Video", url: "./assets/videos/vlm-robocar.mp4" }
+      { label: "Demo Video", url: "https://youtu.be/6a7uvTOKMfY" }
     ]
   },
   {
@@ -275,6 +275,12 @@ function renderNews() {
 function renderProjectDialogMedia(project) {
   if (!project.media) {
     return "";
+  }
+
+  if (project.media.type === "youtube") {
+    return `
+      <iframe class="project-dialog__media" src="${project.media.src}" title="${project.title} demo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    `;
   }
 
   if (project.media.type === "video" && project.media.src) {
