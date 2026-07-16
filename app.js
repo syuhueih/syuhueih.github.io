@@ -199,7 +199,10 @@ const projects = [
       "Improved image correspondence using mutual information-based evaluation and deformation regularization.",
       "Reduced folding artifacts to 0.08%, supporting smoother and more plausible deformation fields."
     ],
-    tags: ["VoxelMorph", "Registration", "CT-MR", "MONAI", "PyTorch"]
+    tags: ["VoxelMorph", "Registration", "CT-MR", "MONAI", "PyTorch"],
+    links: [
+      { label: "GitHub", url: "https://github.com/syuhueihuang/ct-mr-diffeomorphic-voxelmorph.git" }
+    ]
   }
 ];
 
