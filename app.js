@@ -128,7 +128,7 @@ const experiences = [
     period: "2025/09 - 2025/12",
     lines: ["Team Lead", "Autonomous driving prototype"],
     image: "./assets/images/gator_ai_logo.jpeg",
-    url: "#publications"
+    url: "https://www.ufgatorai.info/"
   },
   {
     name: "National Taiwan University of Science and Technology",
