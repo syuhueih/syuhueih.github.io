@@ -212,6 +212,12 @@ const projects = [
     title: "CT-MR Thorax-abdomen Intra-patient Registration",
     period: "2025",
     category: "Medical Imaging",
+    media: {
+      type: "image",
+      src: "./assets/images/ct-mr-registration-result.png?v=20260716",
+      label: "CT-MR registration result with deformation field",
+      aspectRatio: "1189 / 390"
+    },
     summary: "Developed a Diffeomorphic VoxelMorph-based registration pipeline for CT-MR thorax-abdomen alignment with anatomically plausible deformation fields.",
     bullets: [
       "Implemented a deep learning registration workflow for intra-patient CT-MR thorax-abdomen alignment.",
